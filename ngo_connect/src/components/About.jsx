@@ -1,12 +1,12 @@
-import Navbar from "./Components/Navbar"
-import './About.css'
-import BlockChain from "./assets/BlockChain.webp"
-import BlockChain2 from "./assets/BlockChain2.jpg"
-import Wasif from "./assets/Wasif.jpg"
-import Khizar from "./assets/Khizar.jpg"
-import Amish from "./assets/Amish.jpg"
-import Bitcoin from "./assets/Bitcoin.jpg"
-import Footer from "./Components/Footer"
+import Navbar from "./Nav"
+import '../css/About.css'
+import BlockChain from "../assets/BlockChain.webp"
+import BlockChain2 from "../assets/Blockchain2.jpg"
+import Wasif from "../assets/Wasif.jpg"
+import Khizar from "../assets/Khizar.jpg"
+import Amish from "../assets/Amish.jpg"
+import Bitcoin from "../assets/Bitcoin.jpg"
+import Footer from "./Footer"
 
 const About = () => {
   return (
