@@ -1,0 +1,20 @@
+.Home-H1{
+    font-size: 60px;
+}
+.intro{
+    background-color: #EEFFFF;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    flex-wrap:wrap;
+    padding-bottom: 50px;
+    
+}
+
+
+.Home-img{
+    padding-left: -50px;
+    width: 480px;
+    height: 470px;
+  }

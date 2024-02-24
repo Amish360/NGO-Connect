@@ -1,0 +1,26 @@
+.EP-H1{
+    font-size: 70px;
+}
+.EP-P1{
+    font-size: 20px;
+}
+.EP-1{
+    background-color: #EEFFFF;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    flex-wrap:wrap;
+    padding-bottom: 50px;
+    
+}
+.NoEvents{
+    padding: 100px;
+    text-align: center;
+    font-size: 70px;
+}
+.Event-img{
+    padding-left: 100px;
+    width: 580px;
+    height: 470px;
+}
