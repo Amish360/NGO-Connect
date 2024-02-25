@@ -1,0 +1,15 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust the height as needed */
+}
+
+.form-group {
+    width: 300px; /* Adjust the width of the form inputs */
+}
+
+.submitbtn {
+    margin-top: 20px; /* Adjust the margin as needed */
+}

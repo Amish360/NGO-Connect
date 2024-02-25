@@ -1,10 +1,12 @@
-import './WorkerPortal.css'
-import Help from "./assets/images/Help.png"
-import Footer from "./Components/Footer"
+import '../css/WorkerPortal.css'
+import Help from "../assets/Help.png"
+import Footer from "./Footer"
+import Navbar from './Nav'
 
 const WorkerPortal = () => {
   return (
     <div>
+        <Navbar/>
         <div className="WP-1">
             <div className="container">
                 <div className="row">

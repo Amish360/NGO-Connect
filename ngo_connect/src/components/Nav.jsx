@@ -1,38 +1,48 @@
-// eslint-disable-next-line
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const nav = () => {
-    return(
+const Navbar = () => {
+    return (
         <section>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-            
-            <a class="navbar-brand" href="/">NGO Connect</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-            
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-            
-            <a class="nav-link" href="/">About Us</a>
-            </li>
-            <li class="nav-item">
-            
-            <a class="nav-link" href="/">Modules</a>
-            </li>
-            </ul>
-            </div>
-            </div>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                <div className="container-fluid">
+                    <Link className="navbar-brand" to="/">NGO Connect</Link> 
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <Link className="nav-link active" to="/">Home</Link> 
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/about">About Us</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/donor">Donate</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/donationTracker">Your Donations</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/government">Government</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/benefactor">Benefactor</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/events">Events</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/worker">Worker</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-    </section>
+        </section>
     );
 };
 
-
-export default nav;
+export default Navbar;

@@ -1,11 +1,13 @@
-import Footer from "./Components/Footer"
-import './Benefactor.css'
-import Need from "./assets/Need.png"
+import Footer from "./Footer"
+import Navbar from "./Nav"
+import '../css/Benefactor.css'
+import Need from "../assets/Need.png"
 
 const Benefactor = () => {
 
   return (
     <div>
+        <Navbar/>
         <div className="B-1">
             <div className="container">
                 <div className="row">

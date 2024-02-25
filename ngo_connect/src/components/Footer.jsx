@@ -41,8 +41,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div><div className='Last-footer'>
-            <p>Design By Wasif Raza</p>
         </div>
         </>
   )

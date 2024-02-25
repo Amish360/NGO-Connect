@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDonate } from '@fortawesome/free-solid-svg-icons';
+import Navbar from './Nav'
+import Footer from './Footer'
 
 const Donor = () => {
     const [donationAmount, setDonationAmount] = useState(0);
     const [donationPopupOpen, setDonationPopupOpen] = useState(false);
     const [donationSuccess, setDonationSuccess] = useState(false);
     const [donationCount, setDonationCount] = useState(0);
+    // eslint-disable-next-line
     const [donationTracker, setDonationTracker] = useState({});
     const [creditCardNumber, setCreditCardNumber] = useState('');
     const [creditCardExpiry, setCreditCardExpiry] = useState('');
@@ -37,11 +40,26 @@ const Donor = () => {
             projectDetails: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             expectedCompletionDate: "2024-06-30"
         },
-        // Add more projects as needed
+        {
+            ngoName: "NGO C",
+            projectName: "Project C",
+            projectDetails: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            expectedCompletionDate: "2024-09-30"
+        },
+        {
+            ngoName: "NGO D",
+            projectName: "Project D",
+            projectDetails: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            expectedCompletionDate: "2025-03-31"
+        }
     ];
+    
 
     return (
         <div>
+            <section>
+                <Navbar/>
+            </section>
             {projects.map((project, index) => (
                 <div className="card" key={index}>
                     <div className="card-body">
@@ -119,7 +137,12 @@ const Donor = () => {
                     )}
                 </div>
             ))}
+
+                        <section>
+                        <Footer/>
+                        </section>
         </div>
+        
     );
 };
 

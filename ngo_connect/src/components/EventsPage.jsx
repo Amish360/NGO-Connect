@@ -1,10 +1,12 @@
-import './EventsPage.css'
-import Volunteer from "./assets/images/Volunteer.png"
-import Footer from "./Components/Footer"
+import '../css/EventsPage.css'
+import Volunteer from "..//assets/Volunteer.png"
+import Navbar from './Nav'
+import Footer from "./Footer"
 
 const EventsPage = () => {
   return (
     <div>
+        <Navbar/>
         <div className="EP-1">
             <div className="container">
                 <div className="row">
